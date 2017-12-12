@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Log
+
+# Model Form Field configuration
+form: $/creations/googleapi/models/log/fields.yaml
+
+# Model Class name
+modelClass: Creations\GoogleAPI\Models\Log
+
+# Default redirect location
+defaultRedirect: creations/googleapi/logs
+
+# Create page
+create:
+    title: Create Log
+    redirect: creations/googleapi/logs/update/:id
+    redirectClose: creations/googleapi/logs
+
+# Update page
+update:
+    title: Edit Log
+    redirect: creations/googleapi/logs
+    redirectClose: creations/googleapi/logs
+
+# Preview page
+preview:
+    title: Preview Log

@@ -1,0 +1,29 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    created_at:
+        label     : creations.googleapi::lang.logs.created_at
+        searchable: yes
+
+    provider:
+        label     : creations.googleapi::lang.logs.provider
+        searchable: yes
+
+    result:
+        label     : creations.googleapi::lang.logs.result
+        searchable: yes
+
+    user_id:
+        label   : creations.googleapi::lang.logs.user_id
+        relation: user
+        select  : login
+
+    email:
+        label     : creations.googleapi::lang.logs.email
+        searchable: yes
+
+    ip:
+        label     : creations.googleapi::lang.logs.ip
+        searchable: yes

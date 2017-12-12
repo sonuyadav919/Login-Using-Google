@@ -1,0 +1,39 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    google_help:
+        type   : partial
+        path   : $/creations/googleapi/models/settings/_google_help.htm
+        stretch: true
+        span   : right
+
+    google_client_id:
+        label   : creations.googleapi::lang.settings.google.google_client_id
+        span    : left
+        required: true
+
+    google_client_secret:
+        label   : creations.googleapi::lang.settings.google.google_client_secret
+        span    : left
+        required: true
+
+    google_button:
+        label  : creations.googleapi::lang.settings.google.google_button
+        type   : dropdown
+        options:
+            dark : creations.googleapi::lang.settings.google.google_button_opts.dark
+            light: creations.googleapi::lang.settings.google.google_button_opts.light
+        default: dark
+        span   : left
+
+    section_interface:
+        label  : creations.googleapi::lang.settings.generic.section_interface
+        type   : section
+
+    hide_login_fields:
+        label  : creations.googleapi::lang.settings.generic.hide_login_fields
+        type   : switch
+        comment: creations.googleapi::lang.settings.generic.hide_login_fields_comm

@@ -1,0 +1,10 @@
+{
+    "name": "creations/googleapi",
+    "description": "Manage Google API",
+    "type": "library",
+    "require": {
+        "google/apiclient": "2.0.*"
+    },
+    "license": "MIT",
+    "minimum-stability": "stable"
+}

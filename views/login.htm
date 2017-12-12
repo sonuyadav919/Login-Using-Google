@@ -1,0 +1,14 @@
+==
+<?php
+    function onStart(){
+      $backend = \Config::get('cms.backendUri');
+
+      $this['backendurl'] = url($backend).'/creations/googleapi/google/';
+    }
+ ?>
+==
+
+
+<div id="ssologin-container">
+    <a id="ssologin-button-google" href="{{url('/')}}{{config_get('cms.backendUri')}}/creations/googleapi/google"></a>
+</div>
